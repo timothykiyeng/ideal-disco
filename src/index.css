@@ -38,6 +38,14 @@ body {
     @apply text-pink-500 md:text-5xl text-2xl mb-2 
   }
 
+  .portal-nav {
+    @apply flex flex-col
+  }
+
+  .portal-nav-icon {
+    @apply md:text-4xl text-2xl mb-4
+  }
+
   .datepicker, .title {
     @apply my-2 rounded-md border-2 w-full pl-2 pr-4 py-2 md:mx-2 outline-none focus-within:border-sky-500 
   }
