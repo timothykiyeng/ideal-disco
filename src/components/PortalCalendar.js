@@ -23,7 +23,7 @@ import {
 const PortalCalendar = ({ docAppointments, user, patientAppts, patients, patientNames }) => {
   const dispatch = useDispatch();
   const [currentView, setCurrentView ] = useState('Month')
-  const [currentDate, setCurrentDate ] = useState('2023-01-19')
+  const [currentDate, setCurrentDate ] = useState('2023-01-01')
   const [apptId, setApptId] = useState({})
 
 
