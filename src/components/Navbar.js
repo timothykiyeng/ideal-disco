@@ -27,8 +27,8 @@ const Navbar = ({user, setUser}) => {
 
     return ( 
         <>
-            <nav className='lg:px-64 md:px-40 px-8 md:py-6 py-4 top-0 left-0 sticky z-[100] bg-sky-400 opacity-100 shadow-xl'>
-                <div className='md:flex items-center justify-between'>
+            <nav className=' lg:px-32  px-8 md:py-6 py-4 top-0 left-0 sticky z-[100] bg-sky-400 opacity-100 shadow-xl'>
+                <div className='md:flex items-center justify-between '>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='flex items-center lg:text-3xl md:2xl text-xl uppercase font-semibold text-white'>
                             <img className="md: md:w-16 w-8" src={Logo} alt="logo"/>
