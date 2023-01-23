@@ -60,8 +60,8 @@ const PortalCalendar = ({ docAppointments, user, patientAppts, patients, patient
       onFieldChange({ patient_id: e })
 
     };
-    const onNotesChange = (e) => {
-      onFieldChange({ notes: e })
+    const onDescriptionChange = (e) => {
+      onFieldChange({ description: e })
     };
     return (
       <AppointmentForm.BasicLayout
@@ -82,12 +82,12 @@ const PortalCalendar = ({ docAppointments, user, patientAppts, patients, patient
         />
         <AppointmentForm.Label
           type="title"
-          text="Notes:"
+          text="Description:"
         />
         <AppointmentForm.TextEditor
-          value={appointmentData.notes}
-          onValueChange={onNotesChange}
-          placeholder="notes"
+          value={appointmentData.description}
+          onValueChange={onDescriptionChange}
+          placeholder="Appointment details"
         />
       </AppointmentForm.BasicLayout>
     );

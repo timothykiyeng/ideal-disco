@@ -20,7 +20,7 @@ function PortalPatients({ search, setSearch, patients, docAppointments, user }) 
       </div>
       <br></br>
       <div className='appt-list' >
-      { patients.map(p => {
+      { Array.from(patients).map(p => {
         return (
           <PatientCollapsible key={p.id} patient={p} docAppointments={docAppointments} />
         )

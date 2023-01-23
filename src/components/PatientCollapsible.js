@@ -28,7 +28,7 @@ const PatientCollapsible = ({ patient, docAppointments}) => {
                 <h3>{appt.startDate.split('-')[1]}/{appt.startDate.split('-')[2].split('T')[0]}/{appt.startDate.split('-')[0]}:</h3>
                 <li>Procedure: {appt.title}</li>
                 <li>Room: {appt.location}</li>
-                <li>Notes: {appt.notes}</li>
+                <li>Description: {appt.description}</li>
               </ul>
             )
           }

@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchResults = createAsyncThunk("results/fetchResults", () => {
-  return fetch("/medical_histories")
+  return fetch("http://127.0.0.1:3000/medical_histories")
     .then((response) => response.json())
     .then((data) => data);
 });

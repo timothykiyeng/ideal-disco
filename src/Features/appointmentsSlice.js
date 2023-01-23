@@ -1,14 +1,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchAppointments = createAsyncThunk("appointments/fetchAppointments", () => {
-  return fetch("/appointments")
+  return fetch("http://127.0.0.1:3000/appointments")
     .then((response) => response.json())
     .then((data) => data);
 });
 export const updateBEAppointment = createAsyncThunk(
   "newAppointments/updateAppointments",
   async (appt) => {
-    return fetch(`/appointments/${appt.id}`, {
+    return fetch(`http://127.0.0.1:3000/appointments/${appt.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
