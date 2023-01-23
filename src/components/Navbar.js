@@ -19,7 +19,8 @@ const Navbar = ({user, setUser}) => {
     const navlinks = [
         {path: '/', name: 'Home'},
         {path: '/about', name: 'About'},
-        {path: '/contact', name: 'Contact'}
+        {path: '/contact', name: 'Contact'},
+        {path: '/departments', name: 'Departments'}
     ]
     
     // const [doc, setDoc] = useState(false)

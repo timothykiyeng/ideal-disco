@@ -65,7 +65,7 @@ function App() {
       setPatientAppts(docAppointments.filter(appt => appt.patient_id === user.id))
     } 
     if(user && user.doc){
-      setPatientNames(patients.map(p => ({id: p.id, text: p.name})))
+      setPatientNames(Array.from(patients).map(p => ({id: p.id, text: p.name})))
     }
   }, [user])
 
@@ -77,8 +77,7 @@ function App() {
     }
   }
   
-
-
+  console.log(patients)
 
   return (
     <div className="App">

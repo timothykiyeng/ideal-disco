@@ -23,7 +23,7 @@ const ApptCollapsible = ({ appt }) => {
       </div>
       <div className='collapsible'>
         <ul key={appt.id} className={expand ? "expanded" : 'collapsed'}>
-          <li>Notes: {appt.notes}</li>
+          <li>Description: {appt.description}</li>
         </ul>
       </div>
     </div>
