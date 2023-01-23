@@ -34,6 +34,7 @@ const Departments = ({ departments, setDept }) => {
       </div>
     </div>
   )
+  
 }
 
 export default Departments
