@@ -18,19 +18,19 @@ const Departments = ({ departments, setDept }) => {
   }
 
   return (
-    <div className='our-team'>
-      <h1>Departments:</h1>
-      <div className='departments'>
-        <h3 className='dept' onClick={() => handleClick(departments[0])}>{<GiNightSleep />} {departments[0].name}  </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[1])}>{<FaHeartbeat />} {departments[1].name} </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[2])}>{<GiNoseSide />} {departments[2].name}  </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[3])}>{<TbMoodKid />} {departments[3].name}  </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[4])}>{<GrEmergency />} {departments[4].name}  </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[5])}>{<IoIosBody />} {departments[5].name}  </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[6])}>{<MdBloodtype />} {departments[6].name}  </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[7])}>{<FaMicroscope />} {departments[7].name}  </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[8])}>{<GiLoveInjection />} {departments[8].name} </h3>
-        <h3 className='dept' onClick={() => handleClick(departments[9])}>{<FaBrain />} {departments[9].name} </h3>
+    <div className='our-team min-h-[80vh] md:mx-32 mx-8'>
+      <h1 className='header md:mb-16 mb-8 mt-4'>Departments:</h1>
+      <div className='departments grid md:grid-cols-3 grid-cols-2 md:gap-16 gap-8 md:mb-16 mb-8'>
+        <div className='dept-card' onClick={() => handleClick(departments[0])}>{<GiNightSleep className='dept-icon' />} {departments[0].name}  </div>
+        <div className='dept-card' onClick={() => handleClick(departments[1])}>{<FaHeartbeat className='dept-icon' />} {departments[1].name} </div>
+        <div className='dept-card' onClick={() => handleClick(departments[2])}>{<GiNoseSide className='dept-icon' />} {departments[2].name}  </div>
+        <div className='dept-card' onClick={() => handleClick(departments[3])}>{<TbMoodKid className='dept-icon' />} {departments[3].name}  </div>
+        <div className='dept-card' onClick={() => handleClick(departments[4])}>{<GrEmergency className='dept-icon' />} {departments[4].name}  </div>
+        <div className='dept-card' onClick={() => handleClick(departments[5])}>{<IoIosBody className='dept-icon' />} {departments[5].name}  </div>
+        <div className='dept-card' onClick={() => handleClick(departments[6])}>{<MdBloodtype className='dept-icon' />} {departments[6].name}  </div>
+        <div className='dept-card' onClick={() => handleClick(departments[7])}>{<FaMicroscope className='dept-icon' />} {departments[7].name}  </div>
+        <div className='dept-card' onClick={() => handleClick(departments[8])}>{<GiLoveInjection className='dept-icon' />} {departments[8].name} </div>
+        <div className='dept-card' onClick={() => handleClick(departments[9])}>{<FaBrain className='dept-icon' />} {departments[9].name} </div>
       </div>
     </div>
   )
