@@ -39,7 +39,7 @@ body {
   }
 
   .portal-nav {
-    @apply flex flex-col
+    @apply flex flex-col justify-center items-center md:mx-8 mx-4 
   }
 
   .portal-nav-icon {
