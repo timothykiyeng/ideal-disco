@@ -46,6 +46,14 @@ body {
     @apply md:text-4xl text-2xl mb-4
   }
 
+  .patient-details-doc {
+    @apply mx-1 font-light text-lg
+  }
+
+  .patient-list {
+    @apply my-2 text-gray-800 font-medium text-xl
+  }
+
   .datepicker, .title {
     @apply my-2 rounded-md border-2 w-full pl-2 pr-4 py-2 md:mx-2 outline-none focus-within:border-sky-500 
   }
