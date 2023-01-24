@@ -10,13 +10,19 @@ function PortalPatients({ search, setSearch, patients, docAppointments, user }) 
   }
 
   return (
-    <div>
+    <div className='md:mx-32 mx-8 md:my-16 my-8'>
       <PortalNav user={user} />
-      <div className='search'>
-        <label>
+      <div className='search md'>
+        <label className='header text-2xl'>
           Search Patient:
-          <input type='text' placeholder='patient name...' className='patientSearch' onChange={handleChange} value={search} />
         </label>
+        <input 
+            type='text' 
+            placeholder='Patient name...' 
+            className='patientSearch datepicker' 
+            onChange={handleChange} 
+            value={search} 
+          />
       </div>
       <br></br>
       <div className='appt-list' >
